@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Responsive HTML5 Page Layout Template</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="../static/logo.jpg">Pune&nbsp;Darshan</div>
+		<nav>  
+			<ul>
+				<li><a href="{{url_for('index')}}">Home</a>
+				<li><a href="{{url_for('about')}}">About</a>
+				<li><a href="{{url_for('allusers')}}">Bookings</a>
+				<li><a href="{{url_for('search')}}">Search</a>
+				<li><a href="{{url_for('contact')}}">Contact</a>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<strong>About Our Company</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+		    <article>
+				<p>Pune Darshan was established in 2021. An initiative to travel and explore Pune District.</p>
+				<p>Yet it's not just another traveling website. The basic funda being - do the ordinary in an extraordinary way. Meeting like minded individuals. We provide travelling and sightseeing activities in Pune District. Our aim is provide best travelling experience to travel enthusiast.</p>
+				<p>Your safety is our priority, Our Guides have significant experience with outdoor activities and work very hard to make each event a safe and enjoyable experience for everyone.</p>
+		    </article>
+		
+		<strong>{{username}} </strong><br><br>
+		
+		{% for item in mylist %}
+		
+		     {{item}} <br>
+			 
+		{% endfor %}
+		
+		
+		
+		
+		
+		
+		</main>
+		<aside>
+			<div id="image"><img src="../static/ds.jpg">Dagadusheth Halwai Ganapati</div>
+		</aside>
+	</section>
+	<footer>
+		<p>&copy;2022 Pune Darshan Pvt Ltd. <a href="https://html5-templates.com/" target="_blank" rel="nofollow"></a></p>
+		<address>
+			Email Us: <a href="mailto:me@example.com">punedarshan@pd.in</a>
+		</address>
+	</footer>
+
+
+</body>
+
+</html>
